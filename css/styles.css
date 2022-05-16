@@ -44,6 +44,7 @@ body {
   letter-spacing: -0.1px;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 img {
@@ -62,7 +63,7 @@ img {
   margin-right: auto;
 }
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -71,10 +72,121 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
 
 /* MAIN-CONTENT  */
 .main-content {
   flex-grow: 1;
+}
+
+
+/* SITE HEADER  */
+.site-header {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header-bg {
+  width: 1366px;
+  height: 156px;
+  object-fit: cover;
+}
+
+/* MAIN CONTENT  */
+.job-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.job-item {
+  min-width: 1110px;
+  display: flex;
+  align-items: center;
+  padding: 32px 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+}
+
+.job-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.job-badge {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  margin-right: 24px;
+}
+
+.job-info-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-info-text {
+  font-size: 14px;
+  line-height: normal;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.job-title {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 8px;
+  color: #2b3939;
+  text-transform: capitalize;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.extra-info-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.extra-info {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  color: #7c8f8f;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.12px;
+}
+
+.extra-info-two::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: #b7c4c4;
+  border-radius: 50%;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.extra-job-content-list {
+  padding: 0;
+  padding-left: 30px;
+  margin: 0;
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.list-item-info {
+  background-color: #f2f2f2;
+  padding: 4px 8px;
+  border-radius: 4px;
 }
