@@ -74,6 +74,35 @@ img {
   overflow: hidden;
 }
 
+/* BADGE  */
+.badge-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.badge {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 6px 8px 4px 8px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 14px;
+  letter-spacing: -0.08px;
+  border-radius: 12px;
+}
+
+.badge-new {
+  background-color: #5ca5a5;
+  margin-left: 16px;
+}
+
+.badge-featured {
+  background-color: #2b3939;
+  margin-left: 8px;
+}
+
 
 /* MAIN-CONTENT  */
 .main-content {
@@ -82,25 +111,19 @@ img {
 
 
 /* SITE HEADER  */
-.site-header {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .header-bg {
-  width: 1366px;
-  height: 156px;
+  min-height: 156px;
   background-image: url(../img/header-bg.svg);
   background-position: center center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-color: #5ca5a5;
 }
 
 /* MAIN CONTENT  */
 .job-list {
   display: flex;
   flex-direction: column;
-  padding-top: 80px;
+  padding-top: 76px;
   padding-bottom: 120px;
 }
 
@@ -110,6 +133,7 @@ img {
   align-items: center;
   padding: 32px 40px;
   background-color: #fff;
+  border-left: 5px solid transparent;
   border-radius: 5px;
   box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
 }
@@ -118,10 +142,15 @@ img {
   margin-bottom: 24px;
 }
 
+.job-item-with-border {
+  border-left-color: #5ca5a5;
+}
+
 .job-badge {
   width: 88px;
   height: 88px;
   object-fit: cover;
+  border-radius: 50%;
   margin-right: 24px;
 }
 
@@ -134,18 +163,25 @@ img {
   font-size: 14px;
   line-height: normal;
   font-weight: bold;
-  margin-bottom: 12px;
 }
 
 .job-title {
-  display: inline-block;
   margin: 0;
   margin-bottom: 8px;
+}
+
+.job-title-link {
+  display: inline-block;
   color: #2b3939;
+  text-decoration: none;
   text-transform: capitalize;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
+}
+
+.job-title-link:hover {
+  color: #7c8f8f;
 }
 
 .extra-info-wrapper {
@@ -192,4 +228,10 @@ img {
   background-color: #f2f2f2;
   padding: 4px 8px;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.list-item-info:hover {
+  background-color: #5ca5a5;
+  color: #fff;
 }
