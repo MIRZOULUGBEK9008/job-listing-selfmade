@@ -83,14 +83,17 @@ img {
 
 /* SITE HEADER  */
 .site-header {
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
 }
 
 .header-bg {
   width: 1366px;
   height: 156px;
-  object-fit: cover;
+  background-image: url(../img/header-bg.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* MAIN CONTENT  */
