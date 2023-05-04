@@ -120,14 +120,14 @@ img {
 }
 
 /* BADGE  */
-.badge-wrapper {
+.item-job__badge-wrapper {
   display: flex;
   align-items: center;
   margin-bottom: 8px;
 }
 
-.badge {
-  display: inline-block;
+.item-job__badge {
+  display: none;
   text-transform: uppercase;
   padding: 6px 8px 4px 8px;
   color: var(--white);
@@ -138,14 +138,22 @@ img {
   border-radius: 12px;
 }
 
-.badge-new {
+.item-job__badge-new {
   background-color: var(--grey);
   margin-left: 16px;
 }
 
-.badge-featured {
+.item-job__badge-new--view {
+  display: inline-block;
+}
+
+.item-job__badge-featured {
   background-color: #2b3939;
   margin-left: 8px;
+}
+
+.item-job__badge-featured--view {
+  display: inline-block;
 }
 
 
@@ -165,14 +173,14 @@ img {
 }
 
 /* MAIN CONTENT  */
-.job-list {
+.job-list-wrapper__container  {
   display: flex;
   flex-direction: column;
   padding-top: 76px;
   padding-bottom: 120px;
 }
 
-.job-item {
+.job-list__item {
   min-width: 1110px;
   display: flex;
   align-items: center;
@@ -183,15 +191,15 @@ img {
   box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
 }
 
-.job-item:not(:last-child) {
+.job-list__item:not(:last-child) {
   margin-bottom: 24px;
 }
 
-.job-item-with-border {
+.job-list__item--featured {
   border-left-color: var(--grey);
 }
 
-.job-badge {
+.item-job__img {
   width: 88px;
   height: 88px;
   object-fit: cover;
@@ -199,23 +207,23 @@ img {
   margin-right: 24px;
 }
 
-.job-info-wrapper {
+.item-job__top {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
-.job-info-text {
+.item-job__company {
   font-size: 14px;
   line-height: normal;
-  font-weight: bold;
 }
 
-.job-title {
+.item-job__title {
   margin: 0;
   margin-bottom: 8px;
 }
 
-.job-title-link {
+.item-job__title-link {
   display: inline-block;
   color: #2b3939;
   text-decoration: none;
@@ -225,16 +233,16 @@ img {
   font-weight: bold;
 }
 
-.job-title-link:hover {
+.item-job__title-link:hover {
   color: #7c8f8f;
 }
 
-.extra-info-wrapper {
+.item-job__extra-info {
   display: flex;
   align-items: center;
 }
 
-.extra-info {
+.extra-info__info {
   display: inline-block;
   display: flex;
   align-items: center;
@@ -245,7 +253,7 @@ img {
   letter-spacing: -0.12px;
 }
 
-.extra-info-two::before {
+.extra-info__info:not(:first-child)::before {
   content: "";
   width: 4px;
   height: 4px;
@@ -255,7 +263,7 @@ img {
   margin-left: 16px;
 }
 
-.extra-job-content-list {
+.item-job__status {
   padding: 0;
   padding-left: 30px;
   margin: 0;
@@ -265,18 +273,20 @@ img {
   align-items: center;
 }
 
-.list-item:not(:last-child) {
+.status__item:not(:last-child) {
   margin-right: 16px;
 }
 
-.list-item-info {
+.status__button {
+  display: inline-block;
+  border: none;
   background-color: var(--light-grey);
   padding: 4px 8px;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.list-item-info:hover {
+.status__button:hover {
   background-color: var(--grey);
   color: var(--white);
 }
