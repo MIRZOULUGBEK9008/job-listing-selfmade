@@ -38,9 +38,11 @@
   <!-- MAIN-CONTENT  -->
   <!-- ****  -->
   <main class="main-content js-main-content">
-    <section class="container job-list js-job-list">
-      <h1 class="visually-hidden">Site job list</h1>
-    </section>
+    <div class="job-list-wrapper">
+      <section class="job-list-wrapper__container container job-list js-job-list">
+        <h1 class="visually-hidden">Site job list</h1>
+      </section>
+    </div>
   </main>
 
 
@@ -53,11 +55,11 @@
   <template class="js-job-template">
     <div class="job-list__item item-job">
       <img class="item-job__img js-job-element-img" src="" width="88" height="88" alt="">
-      <div class="item-job__inner">
+      <div class="item-job__top">
         <div class="item-job__badge-wrapper">
           <span class="item-job__company js-company-name"></span>
-          <span class="item-job__badge item-job__badge--new js-badge-new"></span>
-          <span class="item-job__badge item-job__badge--featured js-badge-featured"></span>
+          <span class="item-job__badge item-job__badge-new js-badge-new"></span>
+          <span class="item-job__badge item-job__badge-featured js-badge-featured"></span>
         </div>
         <h3 class="item-job__title">
           <a class="item-job__title-link js-job-title" href="#"></a>
@@ -75,7 +77,9 @@
 
   <!-- STATUS-ELEMENT  -->
   <template class="js-status-template">
-    <li class="status__item js-status-item"></li>
+    <li class="status__item">
+      <button class="status__button js-status-item" type="button"></button>
+    </li>
   </template>
   <script src="js/main.js"></script>
 </body>
