@@ -8,8 +8,8 @@
 
   <!-- FAVICON  -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
   <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5ca5a5">
   <meta name="msapplication-TileColor" content="#da532c">
@@ -20,274 +20,63 @@
   <link rel="stylesheet" href="css/styles.css">
   <!-- <link rel="stylesheet" href="css/css.min.css"> -->
 </head>
-<body>
+<body class="js-body">
 
   <!-- LOADER  -->
   <div class="loader-wrapper js-loader">
     <span class="loader"></span>
   </div>
 
-  <!-- SITE HEADER -->
+  <!-- ****  -->
+  <!-- SITE-HEADER -->
+  <!-- ****  -->
   <div class="header-bg"></div>
 
-  <main class="main-content">
-    <section class="container job-list">
-      <h2 class="visually-hidden">Site Job list</h2>
 
-      <!-- PHOTOSNAP  -->
-      <div class="job-item job-item-with-border">
-        <img class="job-badge" src="img/photosnap.svg" width="88" height="88" alt="Photosnap">
-        <div class="job-info-wrapper">
-          <div class="badge-wrapper">
-            <span class="job-info-text">Photosnap</span>
-            <span class="badge badge-new">New!</span>
-            <span class="badge badge-featured">Featured</span>
-          </div>
-          <h3 class="job-title"><a class="job-title-link" href="#">Senior frontend developer</a></h3>
-          <div class="extra-info-wrapper">
-            <span class="extra-info">1d ago</span>
-            <span class="extra-info extra-info-two">Full Time</span>
-            <span class="extra-info extra-info-two">USA only</span>
-          </div>
-        </div>
 
-        <ul class="extra-job-content-list">
-          <li class="list-item"><div class="list-item-info">Frontend</div></li>
-          <li class="list-item"><div class="list-item-info">Senior</div></li>
-          <li class="list-item"><div class="list-item-info">HTML</div></li>
-          <li class="list-item"><div class="list-item-info">CSS</div></li>
-          <li class="list-item"><div class="list-item-info">JavaScript</div></li>
-        </ul>
-
-      </div>
-
-      <!-- MANAGE  -->
-      <div class="job-item job-item-with-border">
-        <img class="job-badge" src="img/manage.svg" width="88" height="88" alt="Manage">
-        <div class="job-info-wrapper">
-          <div class="badge-wrapper">
-            <span class="job-info-text">Manage</span>
-            <span class="badge badge-new">New!</span>
-            <span class="badge badge-featured">Featured</span>
-          </div>
-          <h3 class="job-title"><a class="job-title-link" href="#">Fullstack developer</a></h3>
-          <div class="extra-info-wrapper">
-            <span class="extra-info">1d ago</span>
-            <span class="extra-info extra-info-two">Part Time</span>
-            <span class="extra-info extra-info-two">Remote</span>
-          </div>
-        </div>
-
-        <ul class="extra-job-content-list">
-          <li class="list-item"><div class="list-item-info">Fullstack</div></li>
-          <li class="list-item"><div class="list-item-info">Midweight</div></li>
-          <li class="list-item"><div class="list-item-info">Python</div></li>
-          <li class="list-item"><div class="list-item-info">React</div></li>
-        </ul>
-
-      </div>
-
-      <!-- ACCOUNT  -->
-      <div class="job-item">
-        <img class="job-badge" src="img/account.svg" width="88" height="88" alt="Account">
-        <div class="job-info-wrapper">
-          <div class="badge-wrapper">
-            <span class="job-info-text">Account</span>
-            <span class="badge badge-new">New!</span>
-          </div>
-          <h3 class="job-title"><a class="job-title-link" href="#">Junior frontend developer</a></h3>
-          <div class="extra-info-wrapper">
-            <span class="extra-info">2d ago</span>
-            <span class="extra-info extra-info-two">Part Time</span>
-            <span class="extra-info extra-info-two">USA only</span>
-          </div>
-        </div>
-
-        <ul class="extra-job-content-list">
-          <li class="list-item"><div class="list-item-info">Frontend</div></li>
-          <li class="list-item"><div class="list-item-info">Junior</div></li>
-          <li class="list-item"><div class="list-item-info">React</div></li>
-          <li class="list-item"><div class="list-item-info">Sass</div></li>
-          <li class="list-item"><div class="list-item-info">JavaScript</div></li>
-        </ul>
-
-      </div>
-
-      <!-- MY HOME  -->
-      <div class="job-item">
-        <img class="job-badge" src="img/myhome.svg" width="88" height="88" alt="MyHome">
-        <div class="job-info-wrapper">
-          <div class="badge-wrapper">
-            <span class="job-info-text">MyHome</span>
-          </div>
-          <h3 class="job-title"><a class="job-title-link" href="#">Junior frontend developer</a></h3>
-          <div class="extra-info-wrapper">
-            <span class="extra-info">5d ago</span>
-            <span class="extra-info extra-info-two">Contract</span>
-            <span class="extra-info extra-info-two">USA only</span>
-          </div>
-        </div>
-
-        <ul class="extra-job-content-list">
-          <li class="list-item"><div class="list-item-info">Frontend</div></li>
-          <li class="list-item"><div class="list-item-info">Junior</div></li>
-          <li class="list-item"><div class="list-item-info">CSS</div></li>
-          <li class="list-item"><div class="list-item-info">JavaScript</div></li>
-        </ul>
-
-      </div>
-
-      <!-- LOOP STUDIOS  -->
-      <div class="job-item">
-        <img class="job-badge" src="img/loopstudios.svg" width="88" height="88" alt="Loopstudios">
-        <div class="job-info-wrapper">
-          <div class="badge-wrapper">
-            <span class="job-info-text">Loop Studios</span>
-          </div>
-          <h3 class="job-title"><a class="job-title-link" href="#">Software engineer</a></h3>
-          <div class="extra-info-wrapper">
-            <span class="extra-info">1w ago</span>
-            <span class="extra-info extra-info-two">Full Time</span>
-            <span class="extra-info extra-info-two">Worldwide</span>
-          </div>
-        </div>
-
-        <ul class="extra-job-content-list">
-          <li class="list-item"><div class="list-item-info">Fullstack</div></li>
-          <li class="list-item"><div class="list-item-info">Midweight</div></li>
-          <li class="list-item"><div class="list-item-info">JavaScript</div></li>
-          <li class="list-item"><div class="list-item-info">Sass</div></li>
-          <li class="list-item"><div class="list-item-info">Ruby</div></li>
-        </ul>
-
-      </div>
-
-      <!-- FACELT  -->
-      <div class="job-item">
-        <img class="job-badge" src="img/facelt.svg" width="88" height="88" alt="Facelt">
-        <div class="job-info-wrapper">
-          <div class="badge-wrapper">
-            <span class="job-info-text">Facelt</span>
-          </div>
-          <h3 class="job-title"><a class="job-title-link" href="#">Junior backend developer</a></h3>
-          <div class="extra-info-wrapper">
-            <span class="extra-info">2w ago</span>
-            <span class="extra-info extra-info-two">Full Time</span>
-            <span class="extra-info extra-info-two">UK only</span>
-          </div>
-        </div>
-
-        <ul class="extra-job-content-list">
-          <li class="list-item"><div class="list-item-info">Backend</div></li>
-          <li class="list-item"><div class="list-item-info">Junior</div></li>
-          <li class="list-item"><div class="list-item-info">Ruby</div></li>
-          <li class="list-item"><div class="list-item-info">RoR</div></li>
-        </ul>
-
-      </div>
-
-      <!-- SHORTLY  -->
-      <div class="job-item">
-        <img class="job-badge" src="img/shortly.svg" width="88" height="88" alt="Shortly">
-        <div class="job-info-wrapper">
-          <div class="badge-wrapper">
-            <span class="job-info-text">Shortly</span>
-          </div>
-          <h3 class="job-title"><a class="job-title-link" href="#">Junior developer</a></h3>
-          <div class="extra-info-wrapper">
-            <span class="extra-info">2w ago</span>
-            <span class="extra-info extra-info-two">Full Time</span>
-            <span class="extra-info extra-info-two">Worldwide</span>
-          </div>
-        </div>
-
-        <ul class="extra-job-content-list">
-          <li class="list-item"><div class="list-item-info">Frontend</div></li>
-          <li class="list-item"><div class="list-item-info">Junior</div></li>
-          <li class="list-item"><div class="list-item-info">HTML</div></li>
-          <li class="list-item"><div class="list-item-info">Sass</div></li>
-          <li class="list-item"><div class="list-item-info">JavaScript</div></li>
-        </ul>
-
-      </div>
-
-      <!-- INSURE  -->
-      <div class="job-item">
-        <img class="job-badge" src="img/insure.svg" width="88" height="88" alt="Insure">
-        <div class="job-info-wrapper">
-          <div class="badge-wrapper">
-            <span class="job-info-text">Insure</span>
-          </div>
-          <h3 class="job-title"><a class="job-title-link" href="#">Junior frontend developer</a></h3>
-          <div class="extra-info-wrapper">
-            <span class="extra-info">2w ago</span>
-            <span class="extra-info extra-info-two">Full Time</span>
-            <span class="extra-info extra-info-two">USA only</span>
-          </div>
-        </div>
-
-        <ul class="extra-job-content-list">
-          <li class="list-item"><div class="list-item-info">Frontend</div></li>
-          <li class="list-item"><div class="list-item-info">Junior</div></li>
-          <li class="list-item"><div class="list-item-info">Vue</div></li>
-          <li class="list-item"><div class="list-item-info">JavaScript</div></li>
-          <li class="list-item"><div class="list-item-info">Sass</div></li>
-        </ul>
-
-      </div>
-
-      <!-- EYECAM  -->
-      <div class="job-item">
-        <img class="job-badge" src="img/eyecam.svg" width="88" height="88" alt="Eyecam">
-        <div class="job-info-wrapper">
-          <div class="badge-wrapper">
-            <span class="job-info-text">Eyecam Co.</span>
-          </div>
-          <h3 class="job-title"><a class="job-title-link" href="#">Full stack engineer</a></h3>
-          <div class="extra-info-wrapper">
-            <span class="extra-info">3w ago</span>
-            <span class="extra-info extra-info-two">Full Time</span>
-            <span class="extra-info extra-info-two">Worldwide</span>
-          </div>
-        </div>
-
-        <ul class="extra-job-content-list">
-          <li class="list-item"><div class="list-item-info">Fullstack</div></li>
-          <li class="list-item"><div class="list-item-info">Midweight</div></li>
-          <li class="list-item"><div class="list-item-info">JavaScript</div></li>
-          <li class="list-item"><div class="list-item-info">Django</div></li>
-          <li class="list-item"><div class="list-item-info">Python</div></li>
-        </ul>
-
-      </div>
-
-      <!-- AIR -->
-      <div class="job-item">
-        <img class="job-badge" src="img/air-filter.svg" width="88" height="88" alt="Air">
-        <div class="job-info-wrapper">
-          <div class="badge-wrapper">
-            <span class="job-info-text">The Air Filter Company</span>
-          </div>
-          <h3 class="job-title"><a class="job-title-link" href="#">Front-end dev</a></h3>
-          <div class="extra-info-wrapper">
-            <span class="extra-info">1mo ago</span>
-            <span class="extra-info extra-info-two">Part Time</span>
-            <span class="extra-info extra-info-two">Worldwide</span>
-          </div>
-        </div>
-
-        <ul class="extra-job-content-list">
-          <li class="list-item"><div class="list-item-info">Frontend</div></li>
-          <li class="list-item"><div class="list-item-info">Junior</div></li>
-          <li class="list-item"><div class="list-item-info">React</div></li>
-          <li class="list-item"><div class="list-item-info">Sass</div></li>
-          <li class="list-item"><div class="list-item-info">JavaScript</div></li>
-        </ul>
-
-      </div>
-
+  <!-- ****  -->
+  <!-- MAIN-CONTENT  -->
+  <!-- ****  -->
+  <main class="main-content js-main-content">
+    <section class="container job-list js-job-list">
+      <h1 class="visually-hidden">Site job list</h1>
     </section>
   </main>
+
+
+
+  <!-- ****  -->
+  <!-- TEMPLATES  -->
+  <!-- ****  -->
+
+  <!-- JOB ELEMENT  -->
+  <template class="js-job-template">
+    <div class="job-list__item item-job">
+      <img class="item-job__img js-job-element-img" src="" width="88" height="88" alt="">
+      <div class="item-job__inner">
+        <div class="item-job__badge-wrapper">
+          <span class="item-job__company js-company-name"></span>
+          <span class="item-job__badge item-job__badge--new js-badge-new"></span>
+          <span class="item-job__badge item-job__badge--featured js-badge-featured"></span>
+        </div>
+        <h3 class="item-job__title">
+          <a class="item-job__title-link js-job-title" href="#"></a>
+        </h3>
+        <div class="item-job__extra-info extra-info">
+          <span class="extra-info__info js-extra-info"></span>
+          <span class="extra-info__info js-extra-info"></span>
+          <span class="extra-info__info js-extra-info"></span>
+        </div>
+      </div>
+      <!-- STATUS  -->
+      <ul class="item-job__status status js-status-list"></ul>
+    </div>
+  </template>
+
+  <!-- STATUS-ELEMENT  -->
+  <template class="js-status-template">
+    <li class="status__item js-status-item"></li>
+  </template>
   <script src="js/main.js"></script>
 </body>
 </html>
