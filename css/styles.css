@@ -181,7 +181,6 @@ img {
 }
 
 .job-list__item {
-  min-width: 1110px;
   display: flex;
   align-items: center;
   padding: 32px 40px;

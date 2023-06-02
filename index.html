@@ -7,13 +7,13 @@
   <title>Job list</title>
 
   <!-- FAVICON  -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
-  <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5ca5a5">
   <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#ffffff"> -->
 
   <!-- STYLES  -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -53,18 +53,18 @@
 
   <!-- JOB ELEMENT  -->
   <template class="js-job-template">
-    <div class="job-list__item item-job">
+    <div class="job-list__item item-job js-item-job">
       <img class="item-job__img js-job-element-img" src="" width="88" height="88" alt="">
       <div class="item-job__top">
         <div class="item-job__badge-wrapper">
           <span class="item-job__company js-company-name"></span>
-          <span class="item-job__badge item-job__badge-new js-badge-new"></span>
-          <span class="item-job__badge item-job__badge-featured js-badge-featured"></span>
+          <span class="item-job__badge item-job__badge-new js-badge-new">New!</span>
+          <span class="item-job__badge item-job__badge-featured js-badge-featured">Featured</span>
         </div>
         <h3 class="item-job__title">
           <a class="item-job__title-link js-job-title" href="#"></a>
         </h3>
-        <div class="item-job__extra-info extra-info">
+        <div class="item-job__extra-info extra-info js-extra-info-wrapper">
           <span class="extra-info__info js-extra-info"></span>
           <span class="extra-info__info js-extra-info"></span>
           <span class="extra-info__info js-extra-info"></span>
@@ -81,6 +81,6 @@
       <button class="status__button js-status-item" type="button"></button>
     </li>
   </template>
-  <script src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>
